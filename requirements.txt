@@ -1,0 +1,13 @@
+# Exact versions used to produce the results in the README (Python 3.11).
+# On Intel Macs numba/llvmlite must stay at these versions (last ones with x86_64 macOS wheels).
+pandas==2.3.3
+numpy==2.2.6
+pyarrow==26.0.1
+lightgbm==4.7.0
+statsforecast==2.1.1
+numba==0.61.2
+llvmlite==0.44.0
+statsmodels==0.15.0
+scipy==1.17.1
+matplotlib==3.11.2
+pyyaml==6.0.3

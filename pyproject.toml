@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "demandcast"
+version = "0.1.0"
+description = "SKU-level retail demand forecasting + inventory optimization on the M5 (Walmart) dataset"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas==2.3.3",
+    "numpy==2.2.6",
+    "pyarrow==26.0.1",
+    "lightgbm==4.7.0",
+    "statsforecast==2.1.1",
+    "numba==0.61.2",
+    "llvmlite==0.44.0",
+    "statsmodels==0.15.0",
+    "scipy==1.17.1",
+    "matplotlib==3.11.2",
+    "pyyaml==6.0.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+demandcast = "demandcast.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

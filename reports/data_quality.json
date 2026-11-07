@@ -1,0 +1,14 @@
+{
+  "store_id": "CA_3",
+  "dept_id": "FOODS_3",
+  "raw_rows": 1597443,
+  "prelaunch_rows_dropped": 319711,
+  "missing_prices_filled": 0,
+  "closure_days": 3,
+  "n_series": 823,
+  "n_rows": 935122,
+  "start": "2013-01-01",
+  "end": "2016-05-22",
+  "pct_zero_sales": 37.1,
+  "mean_daily_units": 4.02
+}

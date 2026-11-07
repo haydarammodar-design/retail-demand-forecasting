@@ -1,0 +1,12 @@
+{
+  "model": "Ensemble_weighted",
+  "members": [
+    "AutoETS",
+    "AutoARIMA",
+    "LightGBM"
+  ],
+  "from": "2016-05-23",
+  "to": "2016-06-19",
+  "total_units": 81738.70381358228,
+  "total_safety_stock_value": 26398.829999999998
+}
